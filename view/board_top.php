@@ -1,5 +1,5 @@
 <div style="text-align : center; background-color: #5778ff; width: 100%;">
-        <a href="index.php"><img src="../epllogo.png"  width="130px"></a>
+        <a href="index.php"><img src="/epllogo.png"  width="130px"></a>
     </div> 
     
     <ul class="menu" style="width: 100%;">
