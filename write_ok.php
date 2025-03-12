@@ -10,7 +10,6 @@ $filtered = array (
 );
 $newImage='';
 if($_FILES['image']['name']){
-    
     $imageFullName = strtolower($_FILES['image']['name']);
     $imageNameSlice = explode(".",$imageFullName);
     $imageName = $imageNameSlice[0];

@@ -1,0 +1,5 @@
+# 환경 변수 파일 
+.env
+
+# Visual Studio 관련 불필요한 파일
+.vs/
