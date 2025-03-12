@@ -7,12 +7,14 @@ $filtered = array (
     'ninkname' => mysqli_real_escape_string($conn,$_POST['ninkname'])
 
 );
+
+$hashed_pwd = password_hash($filtered['pwd'], PASSWORD_DEFAULT);
 $sql = "
     INSERT INTO members
     (uid,pwd, name)
     VALUE(
         '{$filtered['decide_id']}',
-        hex(aes_encrypt('{$filtered['pwd']}','a')),
+        '{$hashed_pwd}',
         '{$filtered['ninkname']}'
     )
 ";
